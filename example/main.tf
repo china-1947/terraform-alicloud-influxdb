@@ -1,3 +1,3 @@
-module "rule" {
+module "influxdb" {
   source = "../"
 }
