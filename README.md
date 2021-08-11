@@ -19,7 +19,7 @@ You can use this in your terraform template with the following steps.
 1. Adding a module resource to your template, e.g., main.tf
 
     ```
-      module "rule" {
+      module "influxdb" {
       source              = "../"
       name                = "slb-rule-basic-config"
       domain              = "*.test.com"
