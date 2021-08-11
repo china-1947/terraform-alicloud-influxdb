@@ -19,14 +19,10 @@ You can use this in your terraform template with the following steps.
 1. Adding a module resource to your template, e.g., main.tf
 
     ```
-      module "influxdb" {
-      source              = "../"
-      name                = "slb-rule-basic-config"
-      domain              = "*.test.com"
-      cookie              = "cookie-test"
-      health_check_uri    = "/test"
-      health_check_domain = "test"
-      }
+       module "influxdb" {
+       source         = "../"
+       instance_class = "tsdb.1x.basic"
+       }
     ```
 
 2. Setting `access_key` and `secret_key` values through environment variables:
