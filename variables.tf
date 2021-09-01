@@ -1,25 +1,7 @@
-variable "zone_id" {
-  description = "The instance zone ID."
+variable "vswitch_id" {
+  description = "VSwitch variables, if vswitch_id is empty, then the net_type = classic."
   type        = string
-  default     = "cn-hangzhou-g"
-}
-
-variable "vpc_cidr_block" {
-  description = "The specification of the vpc cidr block."
-  type        = string
-  default     = "172.16.0.0/16"
-}
-
-variable "vpc_name" {
-  description = "The specification of the vpc name."
-  type        = string
-  default     = "tf-testaccTsdbInstance"
-}
-
-variable "vswitch_cidr_block" {
-  description = "The specification of the vswitch cidr block."
-  type        = string
-  default     = "172.16.0.0/24"
+  default     = ""
 }
 
 variable "payment_type" {
